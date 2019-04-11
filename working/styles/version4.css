@@ -1,0 +1,258 @@
+/* VERSION 1: ALL TEXT SHOWN FROM START, CHANGE YELLOW/GREEN ON HOVER */
+div > a {
+    text-decoration: none;
+    color: inherit;
+}
+.responsive-button-w:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.responsive-button-b:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+.button-link {
+    background: white;
+    color: black;
+}
+
+.projects-button {
+    background: black;
+    color: white;
+}
+
+.contact-button{
+    background: black;
+    color: white;
+}
+
+.tba-button{
+    background: white;
+    color: black;
+}
+
+/* CHANGE ABOVE ONLY FOR DIFFERENT VERSIONS */
+html,
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.centered-letter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.responsive-letter {
+    font-size: 15vh;
+}
+
+.centered-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.responsive-button {
+    font-size: 15px;
+}
+
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.load-animation {
+    -webkit-animation-name: text-focus-in;
+            animation-name: text-focus-in;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+/******************************/
+/**********GRID SETUP**********/
+/******************************/
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 2fr 1fr 1fr 2fr 3fr;
+    grid-template-areas:
+        "hb hb hb hb hb hb hw hw hw hw hw hw"
+        "lsb lsb lsb letL letL letL letU letU letU rsw rsw rsw"
+        "lsb lsb lsb ftl ftl btnAb btnPr ftr ftr rsw rsw rsw"
+        "lsw lsw lsw fbl fbl btnCo btnTb fbr fbr rsb rsb rsb"
+        "lsw lsw lsw letK letK letK letA letA letA rsb rsb rsb"
+        "fw fw fw fw fw fw fb fb fb fb fb fb"
+}
+
+/* Helper and Filler Divs for Grid */
+.header-black {
+    grid-area: hb;
+    background: black;
+    color: white;
+}
+
+.header-white {
+    grid-area: hw;
+    background: white;
+}
+
+.left-side-black {
+    grid-area: lsb;
+    background: black;
+    color: white;
+}
+
+.left-side-white {
+    grid-area: lsw;
+    background: white;
+}
+
+.right-side-black {
+    grid-area: rsb;
+    background: black;
+    color: white;
+}
+
+.right-side-white {
+    grid-area: rsw;
+    background: white;
+}
+
+.footer-black {
+    grid-area: fb;
+    background: black;
+    color: white;
+}
+
+.footer-white {
+    grid-area: fw;
+    background: white;
+}
+
+.filler-tl {
+    grid-area: ftl;
+    background: black;
+}
+
+.filler-tr {
+    grid-area: ftr;
+    background: white;
+}
+
+.filler-bl {
+    grid-area: fbl;
+    background: white;
+}
+
+.filler-br {
+    grid-area: fbr;
+    background: black;
+}
+
+/* Content Divs of Grid */
+.letterL {
+    grid-area: letL;
+    background: black;
+    color: white;
+}
+
+.letterU {
+    grid-area: letU;
+    background: white;
+    color: black;
+}
+
+.letterK {
+    grid-area: letK;
+    background: white;
+    color: black;
+}
+
+.letterA {
+    grid-area: letA;
+    background: black;
+    color: white;
+}
+
+.about-button {
+    grid-area: btnAb;
+}
+
+.projects-button {
+    grid-area: btnPr;
+}
+
+.contact-button {
+    grid-area: btnCo;
+}
+
+.tba-button {
+    grid-area: btnTb;
+}
