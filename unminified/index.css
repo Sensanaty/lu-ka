@@ -1,3 +1,5 @@
+/* #F9DC5C=YELLOW  #2f2f2f=BLACK #fdfdfd=WHITE*/
+
 html,
 body {
     -webkit-box-sizing: border-box;
@@ -22,69 +24,15 @@ a {
 
 .responsive-button-w:hover {
     cursor: pointer;
-    background: #F9DC5C;
-    color: #2f2f2f;
+    background: #2f2f2f;
+    color: #fdfdfd;
 }
 
 .responsive-button-b:hover {
     cursor: pointer;
-    background: #ED254E;
-    color: #fdfdfd;
+    background: #fdfdfd;
+    color: #2f2f2f;
 }
-
-/******************************/
-/**********ANIMATIONS**********/
-/******************************/
-
-@keyframes text-focus-in {
-    0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fade-in-fwd {
-    0% {
-        -webkit-transform: translateZ(-80px);
-        transform: translateZ(-80px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
-.load-animation {
-    -webkit-animation-name: text-focus-in;
-    animation-name: text-focus-in;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes text-focus-in {
-    0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
-}
-
 
 /******************************/
 /************LAYOUT************/
@@ -112,8 +60,9 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding-left: 11px;
+    padding-right: 11px;
 }
-
 
 /******************************/
 /**********GRID SETUP**********/
@@ -122,8 +71,8 @@ a {
 .landing-container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr;
-    grid-template-rows: 3fr 2fr 1.5fr 1.5fr 2fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr 102px 102px 0.5fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 2fr 102px 102px 2fr 3fr;
     grid-template-areas:
         "hb hb hb hb hb hb hw hw hw hw hw hw"
         "lsb lsb lsb letL letL letL letU letU letU rsw rsw rsw"
@@ -245,4 +194,48 @@ a {
     grid-area: btnTb;
     background: #fdfdfd;
     color: #2f2f2f;
+}
+
+.animation-downfill-b {
+    -webkit-transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.animation-downfill-b:hover {
+    color: #fdfdfd !important;
+}
+
+.animation-downfill-b:hover:before {
+    top: 0%;
+    bottom: auto;
+    height: 100%;
+}
+
+.animation-downfill-b:before {
+    z-index: -1;
+    color: #2f2f2f !important;
+    -webkit-transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.animation-downfill-w {
+    -webkit-transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.animation-downfill-w:hover {
+    color: #2f2f2f !important;
+}
+
+.animation-downfill-w:hover:before {
+    top: 0%;
+    bottom: auto;
+    height: 100%;
+}
+
+.animation-downfill-w:before {
+    z-index: -1;
+    color: #2f2f2f !important;
+    -webkit-transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }

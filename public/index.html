@@ -10,15 +10,17 @@
     <meta name="theme-color" content="#2f2f2f">
     <meta name="msapplication-navbutton-color" content="#2f2f2f">
     <meta name="apple-mobile-web-app-status-bar-style" content="#2f2f2f">
+    <script src="\node_modules\js-cookie\src\js.cookie.js"></script>
+    <script src="scripts/script.js" type="module"></script>
 
     <!-- https://necolas.github.io/normalize.css/ -->
-    <link rel="stylesheet" href="styles/normalize.min.css" type="text/css">
-    <link rel="stylesheet" href="styles/index.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
-    <div class="landing-container load-animation">
+    <div id="main-container" class="landing-container">
         <!-- Filler Elements -->
         <div class="header-black"></div>
         <div class="header-white"></div>
@@ -38,10 +40,10 @@
         <div class="centered-letter responsive-letter letterU">U</div>
         <div class="centered-letter responsive-letter letterK">K</div>
         <div class="centered-letter responsive-letter letterA">A</div>
-        <a href="404.html" class="responsive-button-w centered-button about button">ABOUT</a>
-        <a href="404.html" class="centered-button responsive-button-b projects-button">PROJECTS</a>
-        <a href="404.html" class="centered-button responsive-button-b contact-button">CONTACT</a>
-        <a href="404.html" class="centered-button responsive-button-w tba-button">TBA</a>
+        <a href="404.html" class="animation-downfill-b centered-button responsive-button-w about-button">ABOUT</a>
+        <a href="404.html" class="animation-downfill-w centered-button responsive-button-b projects-button">PROJECTS</a>
+        <a href="404.html" class="animation-downfill-w centered-button responsive-button-b contact-button">CONTACT</a>
+        <a href="404.html" class="animation-downfill-b centered-button responsive-button-w tba-button">TBA</a>
     </div>
 </body>
 
