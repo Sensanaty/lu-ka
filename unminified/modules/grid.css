@@ -1,0 +1,71 @@
+.body-box {
+  display: grid;
+  height: 100%;
+  overflow: hidden;
+}
+
+.body-top-left {
+  grid-template: 2fr 1fr 102px / 1fr 1fr 0.5fr 102px;
+  grid-template-areas: 
+    ". . . ."
+    ". . letterL ."
+    ". . . aboutBtn";
+}
+
+.body-top-right {
+  grid-template: 2fr 1fr 102px / 102px 0.5fr 1fr 1fr;
+  grid-template-areas: 
+    ". . . ."
+    ". letterU . ."
+    "projectsBtn . . .";
+}
+
+.body-bottom-left {
+  grid-template: 102px 1fr 2fr / 1fr 1fr 0.5fr 102px;
+  grid-template-areas: 
+  ". . . contactBtn"
+  ". . letterK ."
+  ". . . .";
+}
+
+.body-bottom-right {
+  grid-template: 102px 1fr 2fr / 102px 0.5fr 1fr 1fr;
+  grid-template-areas: 
+  "todoBtn . . ."
+  ". letterA . ."
+  ". . . .";
+}
+
+ .letterL {
+  grid-area: letterL;
+  justify-self: flex-end;
+}
+
+.about-button {
+  grid-area: aboutBtn;
+}
+
+.letterU {
+  grid-area: letterU;
+}
+
+.projects-button {
+  grid-area: projectsBtn;
+}
+
+.letterK {
+  grid-area: letterK;
+  justify-self: flex-end;
+}
+
+.contact-button {
+  grid-area: contactBtn;
+}
+
+.letterA {
+  grid-area: letterA;
+}
+
+.todo-button {
+  grid-area: todoBtn;
+}

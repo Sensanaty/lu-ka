@@ -1,0 +1,24 @@
+.body-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 11px;
+  padding-right: 11px;
+  height: 101px;
+  -webkit-transition: all .15s cubic-bezier(.215,.61,.355,1) 0s;
+  transition: all .15s cubic-bezier(.215,.61,.355,1) 0s;
+}
+
+.white-button:hover {
+  background: #a5a5a5;
+}
+
+.black-button:hover {
+  background: #747474;
+}
