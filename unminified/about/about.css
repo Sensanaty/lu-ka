@@ -1,0 +1,16 @@
+body,html {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 100%;
+    font-family: 'Josefin Sans',sans-serif;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
