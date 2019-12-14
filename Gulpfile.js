@@ -30,7 +30,7 @@ gulp.task('minify-index-js', function () {
       .pipe(babel({
          presets: ["@babel/preset-env"]
        }))
-      // .pipe(uglify())
+      .pipe(uglify())
       .pipe(rename('index.js'))
       .pipe(gulp.dest('public/scripts'));
 });
