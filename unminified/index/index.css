@@ -1,11 +1,12 @@
 @import url("modules/grid.css");
 @import url("modules/buttons.css");
 
-body,html {
+body,
+html {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 100%;
-  font-family: 'Josefin Sans',sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -22,7 +23,7 @@ a {
   height: 100%;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     ". ."
     ". .";
 }
@@ -41,4 +42,21 @@ a {
 
 .responsive-text {
   font-size: 15vh;
+}
+
+.animationBox {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 0%;
+  width: 10%;
+  pointer-events: none;
+}
+
+.animationBox:nth-child(even) {
+  background: #fdfdfd;
+}
+
+.animationBox:nth-child(odd) {
+  background: #2f2f2f;
 }
