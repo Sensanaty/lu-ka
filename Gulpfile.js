@@ -24,7 +24,7 @@ gulp.task('minify-about', function () {
 });
 
 gulp.task('minify-index-js', function () {
-   return gulp.src('unminified/index/scripts/**/*.js')
+   return gulp.src('unminified/scripts/**/*.js')
       .pipe(concat('index.js'))
       .pipe(webpack())
       .pipe(babel({
