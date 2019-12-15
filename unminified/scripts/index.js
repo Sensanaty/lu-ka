@@ -1,12 +1,35 @@
-import { outroAnimation, introAnimation } from './snippets/animations.js'; // All animation specifics live here
+import { outroAnimation } from './snippets/animations.js';
 
-const buttons = document.querySelectorAll(".body-button");
+if (window.location.pathname + window.location.search == "/public/") { // When in root
+  const about = document.querySelector(".about-button");
+  const projects = document.querySelector(".projects-button");
+  const contact = document.querySelector(".contact-button");
+  const ramblings = document.querySelector(".todo-button");
 
-function AnimateAndNavigate() {
-  setTimeout(outroAnimation, 0);
-  outroAnimation.finished.then();
+  about.addEventListener('click', function (event) {
+    event.preventDefault();
+    handleLinkClick(this);
+  });
+
+  projects.addEventListener('click', function (event) {
+    event.preventDefault();
+    handleLinkClick(this);
+  });
+
+  contact.addEventListener('click', function (event) {
+    event.preventDefault();
+    handleLinkClick(this);
+  });
+
+  ramblings.addEventListener('click', function (event) {
+    event.preventDefault();
+    handleLinkClick(this);
+  });
 }
 
-if (buttons !== null) {
-  buttons.forEach(button => button.addEventListener('click', outroAnimation));
+function handleLinkClick(object) {
+  outroAnimation();
+  setTimeout(() => {
+    window.location.href = object.getAttribute("href");
+  }, 750);
 }
