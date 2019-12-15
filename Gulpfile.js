@@ -9,18 +9,18 @@ const webpack = require('webpack-stream');
 
 gulp.task('minify-index', function () {
    return gulp.src('unminified/index/**/*.css')
-       .pipe(concatCSS('index.css'))
-       .pipe(cleanCSS())
-       .pipe(rename('index.css'))
-       .pipe(gulp.dest('public/styles/'));
+      .pipe(concatCSS('index.css'))
+      .pipe(cleanCSS())
+      .pipe(rename('index.css'))
+      .pipe(gulp.dest('public/styles/'));
 });
 
 gulp.task('minify-about', function () {
    return gulp.src('unminified/about/**/*.css')
-       .pipe(concatCSS('about.css'))
-       .pipe(cleanCSS())
-       .pipe(rename('about.css'))
-       .pipe(gulp.dest('public/styles/'));
+      .pipe(concatCSS('about.css'))
+      .pipe(cleanCSS())
+      .pipe(rename('about.css'))
+      .pipe(gulp.dest('public/styles/'));
 });
 
 gulp.task('minify-index-js', function () {
@@ -29,7 +29,7 @@ gulp.task('minify-index-js', function () {
       .pipe(webpack())
       .pipe(babel({
          presets: ["@babel/preset-env"]
-       }))
+      }))
       .pipe(uglify())
       .pipe(rename('index.js'))
       .pipe(gulp.dest('public/scripts'));
