@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("modules/grid.css");
 @import url("modules/buttons.css");
+
+@font-face {
+  font-display: swap;
+}
 
 body,
 html {
@@ -11,7 +16,7 @@ html {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
 }
 
 a {
