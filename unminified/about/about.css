@@ -17,7 +17,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-weight: normal; */
 }
 
 html,
@@ -101,8 +100,8 @@ p {
 .animationBox {
     position: fixed;
     bottom: 0px;
-    left: 0px;
     height: 100%;
+    left: 0px;
     width: 10%;
     pointer-events: none;
 }
