@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Yantramanav&display=swap');
-
-@font-face {
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap');
+@import url("modules/grid.css");
 
 :root {
     --black: #2f2f2f;
     --white: #F7F7F2;
-    --orange: #f49d37;
+    --orange: #e1bc29;
     --big-fonts: 'Roboto', sans-serif;
-}
-
-* {
-    margin: 0;
-    font-weight: normal;
+    --small-fonts: 'Open Sans', sans-serif;
 }
 
 ::selection {
     background: white;
     color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-weight: normal; */
 }
 
 html,
@@ -29,46 +28,77 @@ body {
     height: 100%;
     background: var(--black);
     color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
 
 #about-text {
     font-family: var(--big-fonts);
-
 }
 
 .header-text {
-    font-size: calc(65px + 4vmin);
+    font-size: calc(55px + 3vmin);
 }
 
 #fancy-text {
-    font-size: calc(70px + 4vmin);
+    font-size: calc(60px + 3vmin);
     font-weight: bold;
-    color: #e1bc29;
-    letter-spacing: 4px;
+    color: var(--orange);
+    letter-spacing: 15px;
+    margin-right: 15px;
 }
 
-#fancy-vertical {
-    color: #E1BC29;
+.fancy-link {
+    color: var(--orange);
+    text-decoration: none;
     font-weight: bold;
+    background: #3c3c3c;
+    padding: 0 8px;
+    border-radius: 2px;
+    -webkit-transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
+    transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
 }
 
-#description-text {
-    font-size: calc(50px + 2vh);
+.fancy-link:hover {
+    border-radius: 25px;
+    background: #444444;
 }
 
-.description-link {
-    color: var(--white);
+.subheader-text {
+    font-size: calc(45px + 2vmin);
 }
 
 .tiny-text {
-    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
+    font-size: calc(21px + 1vmin);
+    margin: 5px 0;
 }
 
+.inline-link {
+    color: var(--orange);
+    text-decoration: none;
+    background: #3c3c3c;
+    padding: 4px 9px;
+    -webkit-transition: all .16s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
+    transition: all .16s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
+    font-weight: bold;
+}
 
+.inline-link:hover {
+    border-radius: 6px;
+    background: #444444;
+}
 
-/* UNCOMMENT BELOW ONCE YOU'RE COMPLETELY DONE WITH THE LAYOUT */
-/* .animationBox {
+.animationBox {
     display: none;
     position: fixed;
     bottom: 0px;
@@ -76,12 +106,12 @@ body {
     height: 100%;
     width: 10%;
     pointer-events: none;
-  }
-  
-  .animationBox:nth-child(even) {
+}
+
+.animationBox:nth-child(even) {
     background: #fdfdfd;
-  }
-  
-  .animationBox:nth-child(odd) {
+}
+
+.animationBox:nth-child(odd) {
     background: #2f2f2f;
-  } */
+}
