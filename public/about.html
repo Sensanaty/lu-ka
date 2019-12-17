@@ -14,7 +14,6 @@
     <!-- https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/about.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -24,19 +23,23 @@
 </head>
 
 <body>
-    <div id="animationDivs">
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-        <div class="animationBox"></div>
-    </div>
-    <div class="about-container">
+    <div id="about-container">
+        <div id="about-text">
+            <div id="header-container">
+                <h1 class="header-text">Hi, I'm <span id="fancy-text"><a href="/"
+                            class="fancy-link link">LUKA</a></span></h1>
+                <h2 class="subheader-text">A Fullstack Web Developer</h2>
+            </div>
+            <div id="body-container">
+                <p class="tiny-text">I like making cool websites, webapps and experiences</p>
+                <p class="tiny-text">Want to see what I've been tinkering with lately? Check out my <a
+                        class="inline-link link" href="./projects.html">PROJECTS</a></p>
+                <p class="tiny-text">Want to get in touch with me? Get in <a class="inline-link link"
+                        href="./contact.html">CONTACT</a></p>
+                <p class="tiny-text">I like to write down what's happening as I make things. Check out my <a
+                        href="./ramblings.html" class="inline-link link">RAMBLINGS</a></p>
+            </div>
+        </div>
     </div>
     <script type="module" src="scripts/index.js"></script>
 </body>

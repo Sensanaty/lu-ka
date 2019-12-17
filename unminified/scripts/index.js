@@ -1,35 +1,19 @@
-import { outroAnimation } from './snippets/animations.js';
-
-if (window.location.pathname + window.location.search == "/public/") { // When in root
-  const about = document.querySelector(".about-button");
-  const projects = document.querySelector(".projects-button");
-  const contact = document.querySelector(".contact-button");
-  const ramblings = document.querySelector(".todo-button");
-
-  about.addEventListener('click', function (event) {
-    event.preventDefault();
-    handleLinkClick(this);
-  });
-
-  projects.addEventListener('click', function (event) {
-    event.preventDefault();
-    handleLinkClick(this);
-  });
-
-  contact.addEventListener('click', function (event) {
-    event.preventDefault();
-    handleLinkClick(this);
-  });
-
-  ramblings.addEventListener('click', function (event) {
-    event.preventDefault();
-    handleLinkClick(this);
-  });
-}
-
-function handleLinkClick(object) {
-  outroAnimation();
-  setTimeout(() => {
-    window.location.href = object.getAttribute("href");
-  }, 750);
-}
+console.log(`%c
+ _        _    _   _  __                 __  __   ______ 
+| |      | |  | | | |/ /     /\\         |  \\/  | |  ____|
+| |      | |  | | | ' /     /  \\        | \\  / | | |__   
+| |      | |  | | |  <     / /\\ \\       | |\\/| | |  __|  
+| |____  | |__| | | . \\   / ____ \\   _  | |  | | | |____ 
+|______|  \\____/  |_|\\_\\ /_/    \\_\\ (_) |_|  |_| |______|
+\n\t\t\t   %cMade with %c❤️ %cby %cLuka Salević %caka %cSensanaty\n\t\t\t\t\t\t\t\t\t\t\t %c(on Github)\n`,
+       "font-size: 15px; color: #e69900;",
+       "color: #26FD3C; font-size: 13px;",
+       "color: red",
+       "color: #26FD3C; font-size: 13px;",
+       "color: #26FD3C; font-size: 15px;",
+       "color: #26FD3C; font-size: 13px;",
+       "color: #26FD3C; font-size: 15px;",
+       "color: #26FD3C; font-size: 9px;");
+   console.log(
+       `\t\t\t\t\t\t%cCurious about the source? It's on GitHub!\n\t\t\t\t\t   https://github.com/Sensanaty/lu-ka`,
+       "color: #FFA500; font-size: 13px;");
