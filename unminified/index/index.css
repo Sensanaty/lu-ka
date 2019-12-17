@@ -48,20 +48,3 @@ a {
 .responsive-text {
   font-size: 15vh;
 }
-
-.animationBox {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  height: 0%;
-  width: 10%;
-  pointer-events: none;
-}
-
-.animationBox:nth-child(even) {
-  background: #fdfdfd;
-}
-
-.animationBox:nth-child(odd) {
-  background: #2f2f2f;
-}

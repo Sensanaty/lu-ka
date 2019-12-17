@@ -96,20 +96,3 @@ p {
     border-radius: 6px;
     background: #444444;
 }
-
-.animationBox {
-    position: fixed;
-    bottom: 0px;
-    height: 100%;
-    left: 0px;
-    width: 10%;
-    pointer-events: none;
-}
-
-.animationBox:nth-child(even) {
-    background: #fdfdfd;
-}
-
-.animationBox:nth-child(odd) {
-    background: #2f2f2f;
-}
