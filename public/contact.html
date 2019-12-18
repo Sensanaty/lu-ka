@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>L U K A | Contact</title>
+    <title>L U K A | CONTACT</title>
     <meta name="author" content="Luka Salević">
     <meta name="description" content="Want to get in touch with Luka Salević? Send me an email!">
     <meta charset="UTF-8">
@@ -14,7 +14,6 @@
     <!-- https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/contact.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -24,6 +23,54 @@
 </head>
 
 <body>
+    <div id="contact-container">
+        <div id="header-container">
+            <ul id="navbar">
+                <li class="navlink"><a class="link" id="about-link" href="/about.html">ABOUT</a></li>
+                <li class="navlink"><a class="link" id="projects-link" href="/projects.html">PROJECTS</a></li>
+                <li class="navlink"><a class="link" id="index-link" href="./">L U K A</a></li>
+                <li class="navlink"><a class="link current" id="contact-link" href="./projects.html">CONTACT</a></li>
+                <li class="navlink"><a class="link" id="ramblings-link" href="./ramblings.html">RAMBLINGS</a></li>
+            </ul>
+        </div>
+
+        <div id="contact-content">
+            <div id="contact-info">
+                <div class="contact-header">
+                    <h2>Find me on these platforms</h2>
+                </div>
+                <i class="im im-github"></i>
+                <div class="contact-fragment"><a class="social-link" href="https://github.com/Sensanaty">Sensanaty</a>
+                </div>
+                <i class="im im-linkedin"></i>
+                <div class="contact-fragment"><a class="social-link"
+                        href="https://linkedin.com/in/LukaSalevic">in/LukaSalevic</a>
+                </div>
+                <i class="im im-mobile"></i>
+                <div class="contact-fragment"><a class="social-link" href="tel:+6281237148689">(+62) 812 3714-8689</a>
+                </div>
+                <i class="im im-mobile"></i>
+                <div class="contact-fragment"><a href="tel:+31612632764" class="social-link">(+31) 612 632-764</a></div>
+                <i class="im im-paperplane"></i>
+                <div class="contact-fragment"><a class="social-link"
+                        href="mailto: salevic@lu-ka.me">salevic@lu-ka.me</a></div>
+            </div>
+        </div>
+
+        <div id="contact-form">
+            <form class="form-element">
+                <input class='form-item' type="email" name="sender-email" placeholder="Your Email" id="form-email"
+                    required>
+                <input class='form-item' type="tel" name="sender-number" placeholder="Your Number (Optional)"
+                    id="form-number">
+                <textarea class='form-item' name="sender-message" id="form-content" form="form-element"
+                    placeholder="What do you want to get in touch with me about?" required></textarea>
+                <button class='form-item' type="submit" id="form-button">SEND</button>
+            </form>
+        </div>
+
+    </div>
+    <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>
