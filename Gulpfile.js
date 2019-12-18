@@ -23,6 +23,30 @@ gulp.task('minify-about', function () {
       .pipe(gulp.dest('public/styles/'));
 });
 
+gulp.task('minify-projects', function () {
+   return gulp.src('unminified/projects/**/*.css')
+      .pipe(concatCSS('projects.css'))
+      .pipe(cleanCSS())
+      .pipe(rename('projects.css'))
+      .pipe(gulp.dest('public/styles/'));
+});
+
+gulp.task('minify-ramblings', function () {
+   return gulp.src('unminified/ramblings/**/*.css')
+      .pipe(concatCSS('ramblings.css'))
+      .pipe(cleanCSS())
+      .pipe(rename('ramblings.css'))
+      .pipe(gulp.dest('public/styles/'));
+});
+
+gulp.task('minify-contact', function () {
+   return gulp.src('unminified/contact/**/*.css')
+      .pipe(concatCSS('contact.css'))
+      .pipe(cleanCSS())
+      .pipe(rename('contact.css'))
+      .pipe(gulp.dest('public/styles/'));
+});
+
 gulp.task('minify-index-js', function () {
    return gulp.src('unminified/scripts/**/*.js')
       .pipe(concat('index.js'))
@@ -36,7 +60,7 @@ gulp.task('minify-index-js', function () {
 });
 
 function watch() {
-   gulp.watch('unminified/**/*.css', gulp.series('minify-index', 'minify-about'));
+   gulp.watch('unminified/**/*.css', gulp.series('minify-index', 'minify-about', 'minify-contact', 'minify-ramblings', 'minify-projects'));
    gulp.watch('unminified/**/*.js', gulp.series('minify-index-js'));
 }
 
