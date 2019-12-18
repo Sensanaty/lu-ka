@@ -3,7 +3,7 @@
 
 :root {
     --black: #2f2f2f;
-    --white: #F7F7F2;
+    --white: #fdfdfd;
     --orange: #e1bc29;
     --big-fonts: 'Roboto', sans-serif;
     --small-fonts: 'Open Sans', sans-serif;
@@ -80,6 +80,10 @@ p {
     line-height: 50px;
     font-size: calc(21px + 1vmin);
     margin: 5px 0;
+}
+
+.tiny-text:nth-child(3) {
+    padding-bottom: 30px;
 }
 
 .inline-link {
