@@ -1,0 +1,29 @@
+#about-container {
+  height: 100%;
+}
+
+#about-text {
+  height: 100%;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+}
+
+#header-container {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 5vh 0 0 3vw;
+}
+
+.header-text {
+  margin: 0 0 3vh 12%;
+}
+
+#body-container {
+  height: 94%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 5vw 0 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>L U K A | CONTACT</title>
+    <meta name="author" content="Luka Salević">
+    <meta name="description" content="Want to get in touch with Luka Salević? Send me an email!">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2f2f2f">
+    <meta name="msapplication-navbutton-color" content="#2f2f2f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2f2f2f">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+</head>
+
+<body>
+    <div id="contact-container">
+
+        <div id="header-container">
+            <ul id="navbar">
+                <li class="navlink"><a class="link" id="about-link" href="/about.html">ABOUT</a></li>
+                <li class="navlink"><a class="link" id="projects-link" href="/projects.html">PROJECTS</a></li>
+                <li class="navlink"><a class="link" id="index-link" href="./">L U K A</a></li>
+                <li class="navlink"><a class="link current" id="contact-link" href="#">CONTACT</a></li>
+                <li class="navlink"><a class="link" id="ramblings-link" href="./ramblings.html">RAMBLINGS</a></li>
+            </ul>
+        </div>
+
+        <div id="contact-content">
+            <div id="contact-info">
+                <a class="social-link" href="mailto: salevic@lu-ka.me"><i class="fas fa-envelope"></i></a>
+                <a target="_blank" class="social-link" href="https://github.com/Sensanaty"><i
+                        class="fab fa-github"></i></a target="_blank">
+                <a target="_blank" class="social-link" href="https://linkedin.com/in/LukaSalevic"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="social-link" href="tel:+6281237148689"><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+
+        <div id="contact-form">
+            <form id="form-element">
+                <div class="form-container" id="name-form-container">
+                    <label class="form-label-item" id="name-label" for="form-name">Name</label>
+                    <input class="form-item" type="text" id="sender-name" placeholder="Your name (Optional)">
+                </div>
+                <div class="form-container" id="email-form-container">
+                    <label class="form-label-item" id="email-label" for="form-email">Email</label>
+                    <input class='form-item' type="email" name="sender-email" placeholder="Your Email" id="form-email"
+                        required>
+                </div>
+                <div class="form-container" id="number-form-container">
+                    <label class="form-label-item" id="number-label" for="form-number">Number</label>
+                    <input class='form-item' type="tel" name="sender-number" placeholder="Your Number (Optional)"
+                        id="form-number">
+                </div>
+                <div class="form-container" id="content-form-container">
+                    <label class="form-label-item" id="content-label" for="form-content">What do you want to get in touch about?</label>
+                    <textarea name="sender-message" id="sender-content" form="form-element"
+                        placeholder="What do you want to get in touch about?" required></textarea>
+                </div>
+                <div class="form-container" id="button-form-container">
+                    <button type="submit" id="form-button">SEND</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script type="module" src="scripts/index.js"></script>
+</body>
+
+</html>

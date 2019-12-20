@@ -1,16 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("modules/grid.css");
 @import url("modules/buttons.css");
 
-body,html {
+@font-face {
+  font-display: swap;
+}
+
+body,
+html {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 100%;
-  font-family: 'Josefin Sans',sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
 }
 
 a {
@@ -22,7 +28,7 @@ a {
   height: 100%;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     ". ."
     ". .";
 }
