@@ -1,10 +1,98 @@
 #contact-container {
   height: 100%;
   display: grid;
-  grid-template: 0.1fr 2fr / 1fr 1fr;
-  grid-template-areas: 
-    "header header"
-    "form socials";
+  grid-template: 1fr 0.7fr 6fr / 1fr;
+  grid-template-areas:
+    "header"
+    "social"
+    "form-area";
 }
 
+/* HEADER CONTAINER */
 
+#header-container {
+  margin-top: 1%;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 3%;
+}
+/* CONTACT CONTENT */
+
+#contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1% 0;
+  padding: 10px 0;
+}
+
+#contact-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3%;
+}
+
+/* CONTACT FORM */
+
+#contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+#form-element {
+  width: 100%;
+  display: grid;
+  grid-template: 1fr 6fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    ". name email number ."
+    ". form-text form-text form-text form-button"
+    ". . . . .";
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 2% 0;
+}
+
+label {
+  padding-top: 15px;
+}
+
+#name-form-container {
+  grid-area: name;
+}
+
+#email-form-container {
+  grid-area: email;
+}
+
+#number-form-container {
+  grid-area: number;
+}
+
+#content-form-container {
+  justify-self: center;
+  align-self: start;
+  grid-area: form-text;
+}
+
+#button-form-container {
+  grid-area: form-button;
+  justify-self: flex-start;
+}
