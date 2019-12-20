@@ -2,51 +2,56 @@
 <html lang="en">
 
 <head>
-  <title>L U K A</title>
-  <meta name="author" content="Luka Salević">
-  <meta name="description" content="Luka Salević | A full-stack web developer">
-  <meta charset="UTF-8">
-  <meta name="theme-color" content="#2f2f2f">
-  <meta name="msapplication-navbutton-color" content="#2f2f2f">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#2f2f2f">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- https://necolas.github.io/normalize.css/ -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2d89ef">
+    <title>L U K A</title>
+    <meta name="author" content="Luka Salević">
+    <meta name="description"
+        content="Luka Salević, a full-stack web developer skilled in Rails, React, Vue and learning more every day.">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#2f2f2f">
+    <meta name="msapplication-navbutton-color" content="#2f2f2f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2f2f2f">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <link rel="prefetch" href="styles/about.css">
 </head>
 
 <body>
-  <div class="body-container">
+    <div class="body-container">
 
-    <div class="body-box body-top-left black">
-      <div class="responsive-text letterL">L</div>
-      <a class="body-button about-button white white-button" href="404.html">ABOUT</a>
+        <div class="body-box body-top-left black">
+            <div class="responsive-text letterL">L</div>
+            <a data-destination="about" rel="prefetch" class="body-button about-button white white-button"
+                href="about.html">ABOUT</a>
+        </div>
+
+        <div class="body-box body-top-right white">
+            <div class="responsive-text letterU">U</div>
+            <a data-destination="projects" class="body-button projects-button black black-button"
+                href="projects.html">PROJECTS</a>
+        </div>
+
+        <div class="body-box body-bottom-left white">
+            <div class="responsive-text letterK">K</div>
+            <a data-destination="contact" class="body-button contact-button black black-button"
+                href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="body-box body-bottom-right black">
+            <div class="responsive-text letterA">A</div>
+            <a data-destination="rambling" class="body-button todo-button white white-button"
+                href="ramblings.html">RAMBLINGS</a>
+        </div>
+
     </div>
-
-    <div class="body-box body-top-right white">
-      <div class="responsive-text letterU">U</div>
-      <a class="body-button projects-button black black-button" href="404.html">PROJECTS</a>
-    </div>
-
-    <div class="body-box body-bottom-left white">
-      <div class="responsive-text letterK">K</div>
-      <a class="body-button contact-button black black-button" href="404.html">CONTACT</a>
-    </div>
-
-    <div class="body-box body-bottom-right black">
-      <div class="responsive-text letterA">A</div>
-      <a class="body-button todo-button white white-button" href="404.html">TODO</a>
-    </div>
-
-  </div>
+    <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>
