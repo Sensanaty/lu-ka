@@ -24,10 +24,7 @@
 
 html, body { height: 100% }
 
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
+h1, h2, h3, p { margin: 0; padding: 0; }
 
 h1, h2, h3 { font-family: var(--big-fonts) }
 
@@ -37,7 +34,7 @@ p { font-family: var(--small-fonts) }
 
 .header-text {
     font-size: calc(55px + 3vmin);
-    margin: 0 0 1vh 12%;
+    margin: 0 0 1vh 6%;
 }
 
 .subheader-text {
@@ -60,13 +57,16 @@ p { font-family: var(--small-fonts) }
 
 #fancy-text {
     padding: 0 8px;
+    margin: 0;
     border-radius: 2px;
+    letter-spacing: 10px;
     -webkit-transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
     transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
 }
 
 .name-link {
     padding: 0 8px;
+    margin: 0;
     border-radius: 2px;
     -webkit-transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
     transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
@@ -94,10 +94,8 @@ p { font-family: var(--small-fonts) }
 
 @media screen and (max-width: 430px) {
     .header-text {
-        justify-content: center;
-        align-items: center;
         font-size: calc(40px + 2vw);
-        margin: 5px 0 10px 15px;
+        margin: 0 0 2vh 5%;
     }
     .name-link { font-size: calc(45px + 2vw) }
     .subheader-text { font-size: calc(27px + 1vw) }
@@ -107,8 +105,9 @@ p { font-family: var(--small-fonts) }
 @media screen and (max-width: 380px) {
     .header-text {
         font-size: calc(35px + 2vw);
-        margin: 5px 0 10px 15px;
+        margin: 0 0 2vh 4%;
     }
+
     .name-link { font-size: calc(40px + 2vw) }
     .subheader-text { font-size: calc(24px + 1vw) }
     .tiny-text { font-size: calc(20px + 1vw) }
@@ -117,9 +116,9 @@ p { font-family: var(--small-fonts) }
 @media screen and (max-width: 330px) {
     .header-text {
         font-size: calc(25px + 2vw);
-        margin: 5px 0 10px 15px;
+        margin: 0 0 2vh 7%;
     }
     .name-link { font-size: calc(30px + 2vw) }
     .subheader-text { font-size: calc(20px + 1vw) }
-    .tiny-text { font-size: calc(20px + 1vw) }
+    .tiny-text { font-size: calc(18px + 1vw) }
 }
