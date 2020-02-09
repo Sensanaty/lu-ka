@@ -105,7 +105,7 @@ p { font-family: var(--small-fonts) }
 @media screen and (max-width: 380px) {
     .header-text {
         font-size: calc(35px + 2vw);
-        margin: 0;
+        margin: 0 0 2vh 4%;
     }
 
     .name-link { font-size: calc(40px + 2vw) }
@@ -116,9 +116,9 @@ p { font-family: var(--small-fonts) }
 @media screen and (max-width: 330px) {
     .header-text {
         font-size: calc(25px + 2vw);
-        margin: 0;
+        margin: 0 0 2vh 7%;
     }
     .name-link { font-size: calc(30px + 2vw) }
     .subheader-text { font-size: calc(20px + 1vw) }
-    .tiny-text { font-size: calc(20px + 1vw) }
+    .tiny-text { font-size: calc(18px + 1vw) }
 }
