@@ -6,9 +6,9 @@
   --black: #2f2f2f;
   --white: #fdfdfd;
   --orange: #e1bc29;
+  --link-highlight: #3c3c3c
   --big-fonts: 'Roboto', sans-serif;
   --small-fonts: 'Open Sans', sans-serif;
-  --link-highlight: #3c3c3c
 }
 
 * {
