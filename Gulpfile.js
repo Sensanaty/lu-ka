@@ -54,7 +54,7 @@ gulp.task('minify-index-js', function () {
       }))
       .pipe(uglify())
       .pipe(rename('index.js'))
-      .pipe(gulp.dest('public/scripts'));
+      .pipe(gulp.dest('public/scripts/'));
 });
 
 gulp.task('build', gulp.series('minify-index', 'minify-about', 'minify-contact', 'minify-ramblings', 'minify-projects', 'minify-index-js'));
