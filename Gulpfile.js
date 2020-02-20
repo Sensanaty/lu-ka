@@ -60,7 +60,11 @@ gulp.task('minify-index-js', function () {
 gulp.task('build', gulp.series('minify-index', 'minify-about', 'minify-contact', 'minify-ramblings', 'minify-projects', 'minify-index-js'));
 
 function watch() {
-   gulp.watch('unminified/**/*.css', gulp.series('minify-index', 'minify-about', 'minify-contact', 'minify-ramblings', 'minify-projects'));
+   gulp.watch('unminified/about/**/*.css', gulp.series('minify-about'));
+   gulp.watch('unminified/contact/**/*.css', gulp.series('minify-contact'));
+   gulp.watch('unminified/index/**/*.css', gulp.series('minify-index'));
+   gulp.watch('unminified/projects/**/*.css', gulp.series('minify-projects'));
+   gulp.watch('unminified/ramblings/**/*.css', gulp.series('minify-ramblings'));
    gulp.watch('unminified/**/*.js', gulp.series('minify-index-js'));
 }
 
