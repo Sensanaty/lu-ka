@@ -1,7 +1,7 @@
+@import url("/modules/pageclip.css");
 @import url("/modules/navbar.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap');
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css");
-@import url("/modules/pageclip.css");
 
 :root {
   --black: #2f2f2f;
