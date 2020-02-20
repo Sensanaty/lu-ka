@@ -2,21 +2,7 @@
 @import url("/modules/pageclip.css");
 @import url("/modules/navbar.css");
 @import url("/modules/social.css");
+@import url("/modules/form.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap');
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css");
 @import url("modules/responsive.css");
-
-textarea {
-  transition: none;
-  min-width: 100%;
-  min-height: 40vh;
-  resize: none;
-}
-
-input, textarea {
-  background: #ededed;
-  color: var(--black);
-  border: none;
-}
-
-label { color: var(--orange) }
