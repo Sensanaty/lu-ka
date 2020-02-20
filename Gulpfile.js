@@ -7,7 +7,7 @@ const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
 
 gulp.task('minify-index', function () {
-   return gulp.src('unminified/index/**/*.css')
+   return gulp.src('unminified/index/index.css')
       .pipe(concatCSS('index.css'))
       .pipe(cleanCSS())
       .pipe(rename('index.css'))
@@ -15,7 +15,7 @@ gulp.task('minify-index', function () {
 });
 
 gulp.task('minify-about', function () {
-   return gulp.src('unminified/about/**/*.css')
+   return gulp.src('unminified/about/about.css')
       .pipe(concatCSS('about.css'))
       .pipe(cleanCSS())
       .pipe(rename('about.css'))
@@ -23,7 +23,7 @@ gulp.task('minify-about', function () {
 });
 
 gulp.task('minify-projects', function () {
-   return gulp.src('unminified/projects/**/*.css')
+   return gulp.src('unminified/projects/projects.css')
       .pipe(concatCSS('projects.css'))
       .pipe(cleanCSS())
       .pipe(rename('projects.css'))
@@ -31,7 +31,7 @@ gulp.task('minify-projects', function () {
 });
 
 gulp.task('minify-ramblings', function () {
-   return gulp.src('unminified/ramblings/**/*.css')
+   return gulp.src('unminified/ramblings/ramblings.css')
       .pipe(concatCSS('ramblings.css'))
       .pipe(cleanCSS())
       .pipe(rename('ramblings.css'))
@@ -39,7 +39,7 @@ gulp.task('minify-ramblings', function () {
 });
 
 gulp.task('minify-contact', function () {
-   return gulp.src('unminified/contact/**/*.css')
+   return gulp.src('unminified/contact/contact.css')
       .pipe(concatCSS('contact.css'))
       .pipe(cleanCSS())
       .pipe(rename('contact.css'))
