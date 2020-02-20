@@ -1,3 +1,4 @@
+@import url("/modules/navbar.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap');
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css");
 @import url("/modules/pageclip.css");
@@ -37,30 +38,6 @@ a { text-decoration: none }
   height: 100%;
   display: grid;
   grid-template: 1fr 0.5fr 5fr / 1fr;
-}
-
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.link {
-  font-size: calc(25px + 1vmin);
-  color: var(--orange);
-  font-weight: 700;
-  background: var(--link-highlight);
-  padding: 8px 10px;
-  min-width: 18%;
-  min-height: 10%;
-  text-align: center;
-  -webkit-transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
-  transition: all .13s cubic-bezier(0.65, 0.05, 0.57, 1.01) 0s;
-}
-
-.link:hover {
-  border-radius: 10px;
-  background: #444444;
 }
 
 #contact-content {
