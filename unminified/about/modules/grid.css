@@ -35,8 +35,3 @@
 .tiny-text:nth-child(3) {
     padding-bottom: 30px;
 }
-
-@media screen and (max-width: 768px) {
-    #body-container { display: none }
-    .mobile { display: flex}
-}
