@@ -1,0 +1,62 @@
+label {
+    color: var(--orange);
+    font-weight: 500;
+}
+
+textarea {
+    transition: none;
+    resize: none;
+    width: 75%;
+    min-height: 75%
+}
+
+button {
+    font-weight: 700;
+    padding: 13px 20px;
+    color: var(--orange);
+    background: var(--link-highlight);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #f9ce2f;
+    background: #353535;
+}
+
+button:active {
+    background: #4d4d4d
+}
+
+input, textarea {
+    margin-top: 6px;
+    padding: 10px 5px 10px 10px;
+    background: #ededed;
+    color: var(--black);
+    border: none;
+    outline-color: var(--orange);
+    border-radius: 3px;;
+}
+
+form {
+    height: 100%;
+    display: grid;
+    grid-template: 1fr 4fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". name email phone ."
+        ". form-text form-text form-text . "
+        ". . form-button . ."
+}
+
+#name-form-container { grid-area: name }
+#email-form-container { grid-area: email }
+#number-form-container { grid-area: phone }
+#message-form-container { grid-area: form-text }
+#button-form-container { grid-area: form-button }
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}

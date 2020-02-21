@@ -23,59 +23,62 @@
 </head>
 
 <body>
-    <div id="contact-container">
 
-        <div id="header-container">
-            <ul id="navbar">
-                <li class="navlink"><a class="link" id="about-link" href="/about.html">ABOUT</a></li>
-                <li class="navlink"><a class="link" id="projects-link" href="/projects.html">PROJECTS</a></li>
-                <li class="navlink"><a class="link" id="index-link" href="./">L U K A</a></li>
-                <li class="navlink"><a class="link current" id="contact-link" href="#">CONTACT</a></li>
-                <li class="navlink"><a class="link" id="ramblings-link" href="./ramblings.html">RAMBLINGS</a></li>
-            </ul>
-        </div>
+<div id="contact-container">
 
-        <div id="contact-content">
-            <div id="contact-info">
-                <a class="social-link" href="mailto: salevic@lu-ka.me"><i class="fas fa-envelope"></i></a>
-                <a target="_blank" class="social-link" href="https://github.com/Sensanaty"><i
-                        class="fab fa-github"></i></a target="_blank">
-                <a target="_blank" class="social-link" href="https://linkedin.com/in/LukaSalevic"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a class="social-link" href="tel:+6281237148689"><i class="fas fa-phone-alt"></i></a>
-            </div>
-        </div>
-
-        <div id="contact-form">
-            <form id="form-element">
-                <div class="form-container" id="name-form-container">
-                    <label class="form-label-item" id="name-label" for="form-name">Name</label>
-                    <input class="form-item" type="text" id="sender-name" placeholder="Your name (Optional)">
-                </div>
-                <div class="form-container" id="email-form-container">
-                    <label class="form-label-item" id="email-label" for="form-email">Email</label>
-                    <input class='form-item' type="email" name="sender-email" placeholder="Your Email" id="form-email"
-                        required>
-                </div>
-                <div class="form-container" id="number-form-container">
-                    <label class="form-label-item" id="number-label" for="form-number">Number</label>
-                    <input class='form-item' type="tel" name="sender-number" placeholder="Your Number (Optional)"
-                        id="form-number">
-                </div>
-                <div class="form-container" id="content-form-container">
-                    <label class="form-label-item" id="content-label" for="form-content">What do you want to get in touch about?</label>
-                    <textarea name="sender-message" id="sender-content" form="form-element"
-                        placeholder="What do you want to get in touch about?" required></textarea>
-                </div>
-                <div class="form-container" id="button-form-container">
-                    <button type="submit" id="form-button">SEND</button>
-                </div>
-
-            </form>
-        </div>
-
+    <div id="navbar">
+        <a href="./about.html" class="navlink link">ABOUT</a>
+        <a href="./projects.html" class="navlink link">PROJECTS</a>
+        <a href="./" class="navlink link" id="index-link">L U K A</a>
+        <a href="./contact.html" class="navlink link">CONTACT</a>
+        <a href="./ramblings.html" class="navlink link">RAMBLING</a>
     </div>
-    <script type="module" src="scripts/index.js"></script>
+
+    <div id="contact-content">
+        <div id="contact-info">
+            <a class="social-link" href="mailto: salevic@lu-ka.me"><i class="fas fa-envelope"></i></a>
+            <a target="_blank" class="social-link" href="https://github.com/Sensanaty"><i
+                    class="fab fa-github"></i></a>
+            <a target="_blank" class="social-link" href="https://linkedin.com/in/LukaSalevic"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a class="social-link" href="tel:+6281237148689"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </div>
+
+    <div id="contact-form">
+        <form action="https://send.pageclip.co/OiCDb8K9nmGrrvdh6VQsuqI9SYECTcfn" class="pageclip-form" method="post">
+            <div class="form-container" id="name-form-container">
+                <label for="name-form">Name</label>
+                <input class="form-item" id="name-form" type="text" name="subject" placeholder="Name" required />
+            </div>
+            <div class="form-container" id="email-form-container">
+                <label for="email-form">Email</label>
+                <input class="form-item" id="email-form" type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-container" id="number-form-container">
+                <label for="phone-form">Phone</label>
+                <input class="form-item" id="phone-form" type="tel" name="phone" placeholder="Phone Number (optional)">
+            </div>
+            <div class="form-container" id="message-form-container">
+                <label for="message-form">What do you want to get in touch about?</label>
+                <textarea class="form-item" id="message-form" name="message" placeholder="What do you want to get in touch about?" required></textarea>
+            </div>
+            <div class="form-container" id="button-form-container">
+                <button type="submit" class="button .pageclip-form__submit--dark-loader">SEND</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+<script type="module" src="scripts/index.js"></script>
+<script>
+    const form = document.querySelector('.pageclip-form');
+
+    Pageclip.form(form, {
+        successTemplate: 'THANK YOU'
+    });
+</script>
 </body>
 
 </html>

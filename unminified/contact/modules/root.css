@@ -1,0 +1,34 @@
+:root {
+    --black: #2f2f2f;
+    --white: #fdfdfd;
+    --orange: #e1bc29;
+    --link-highlight: #3c3c3c;
+    --big-fonts: 'Roboto', sans-serif;
+    --small-fonts: 'Open Sans', sans-serif;
+}
+
+::selection {
+    background: black;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background: var(--black);
+    color: var(--white);
+    transition: all 0.2s;
+}
+
+body, html {
+    height: 100%;
+    font-family: var(--small-fonts);
+}
+
+a { text-decoration: none }
+
+#contact-container {
+    height: 100%;
+    display: grid;
+    grid-template: 0.8fr 1fr 5fr / 1fr;
+}

@@ -34,7 +34,7 @@ p { font-family: var(--small-fonts) }
 
 .header-text {
     font-size: calc(55px + 3vmin);
-    margin: 0 0 1vh 6%;
+    margin: 0 0 1vh 8%;
 }
 
 .subheader-text {
@@ -44,7 +44,7 @@ p { font-family: var(--small-fonts) }
 
 .tiny-text {
     font-size: calc(21px + 1vmin);
-    margin: 15px 0 10px 15px;
+    margin: 8px 0 8px 15px;
     line-height: 50px;
 }
 
@@ -91,6 +91,11 @@ p { font-family: var(--small-fonts) }
 }
 
 .name-link { font-size: calc(60px + 2vmin) }
+
+@media screen and (max-width: 768px) {
+    #body-container { display: none }
+    .mobile { display: flex}
+}
 
 @media screen and (max-width: 430px) {
     .header-text {
