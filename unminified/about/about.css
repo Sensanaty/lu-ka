@@ -92,6 +92,11 @@ p { font-family: var(--small-fonts) }
 
 .name-link { font-size: calc(60px + 2vmin) }
 
+@media screen and (max-width: 768px) {
+    #body-container { display: none }
+    .mobile { display: flex}
+}
+
 @media screen and (max-width: 430px) {
     .header-text {
         font-size: calc(40px + 2vw);
