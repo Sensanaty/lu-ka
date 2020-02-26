@@ -1,35 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap');
+@import url("modules/root.css");
 @import url("modules/grid.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap');
-:root {
-    --black: #2f2f2f;
-    --white: #fdfdfd;
-    --orange: #e1bc29;
-    --big-fonts: 'Roboto', sans-serif;
-    --small-fonts: 'Open Sans', sans-serif;
-}
-
-::selection {
-    background: white;
-    color: black;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    background: var(--black);
-    color: var(--white);
-    transition: all 0.1s;
-}
-
-html, body { height: 100% }
-
-h1, h2, h3, p { margin: 0; padding: 0; }
-
-h1, h2, h3 { font-family: var(--big-fonts) }
-
-p { font-family: var(--small-fonts) }
-
 .mobile { display: none; }
 
 .header-text {
